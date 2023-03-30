@@ -16,6 +16,17 @@
             {
                 Console.WriteLine("Invalid");
             }
+            Console.WriteLine("Enter LastName:");
+            string l = Console.ReadLine();
+            bool val1 = name.validateLastName(l);
+            if (val1)
+            {
+                Console.WriteLine("valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
         }
     }
 }
