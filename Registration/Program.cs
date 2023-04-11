@@ -4,6 +4,17 @@
     {
         public static void Main(string[] args)
         {
+            
+            Email e = new Email();
+            string[] email = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.net", "abc-100@abc.net", "abc.100@abc.com.au","abc+100@gmail.com", };
+            //bool val = e.validateEmail(e);
+            foreach (string v in email)
+            {
+                bool s=e.validateEmail(v);
+                Console.WriteLine(v+" "+s);
+                
+            }
+
             //Name name = new Name();
             //Console.WriteLine("Enter FirstName:");
             //string n = Console.ReadLine();
@@ -28,16 +39,16 @@
             //{
             //    Console.WriteLine("incorrect Number");
             //}
-            Password4 password = new Password4();
-            Console.WriteLine("Enter password Rule2");
-            string n2= (Console.ReadLine());
-            bool val1=password.ValidatePassword(n2);
-            if (val1)
-            {
-                Console.WriteLine("Valid");
-            }
-            else
-            { Console.WriteLine("In Valid"); }
+            //Password4 password = new Password4();
+            //Console.WriteLine("Enter password Rule4");
+            //string n2= (Console.ReadLine());
+            //bool val1=password.ValidatePassword(n2);
+            //if (val1)
+            //{
+            //    Console.WriteLine("Valid");
+            //}
+            //else
+            //{ Console.WriteLine("In Valid"); }
         }
     }
 }
