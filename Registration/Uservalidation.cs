@@ -28,9 +28,13 @@ namespace Registration
         }
         public string ValidateEmail(string eMail)
         {
-            if (Regex.IsMatch(eMail, E_MAIL))
-                return "Valid email";
-            return "Inalid email";
+            foreach (var m in eMail)
+            {
+                if (Regex.IsMatch(eMail, E_MAIL))
+                    return "Valid email";
+                return "Inalid email";
+            }
+            return "";
         }
         public string ValidateMobileNumber(string number)
         {
